@@ -1,0 +1,7 @@
+﻿busID,bus_platenum,bus_type,capacity,userID,driverID
+500,AHG 123,1,90,1,200
+501,EBA 143,2,90,2,201
+502,EBX 455,1,95,3,202
+503,ABC 123,2,80,4,203
+504,DEF 456,1,90,5,204
+505,GHI 789,2,95,6,205

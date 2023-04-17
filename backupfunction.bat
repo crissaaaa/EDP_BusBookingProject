@@ -1,0 +1,1 @@
+mysqldump -h localhost -u root -pY1012Jqkhkpcrissa bus_bookingdb > backupfile.sql
