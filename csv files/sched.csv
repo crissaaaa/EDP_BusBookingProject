@@ -1,0 +1,12 @@
+﻿schedID,busID,starting_pt,destination,sched_date,sched_time,userID,bookingID
+500,1,Legazpi,Pasay,2023-04-17,04:00:00,1,500
+501,2,Legazpi,Pasay,2023-04-17,05:00:00,2,501
+502,3,Legazpi,Pasay,2023-04-18,06:00:00,3,502
+503,4,Legazpi,Pasay,2023-04-18,07:00:00,4,503
+504,5,Legazpi,Pasay,2023-04-19,08:00:00,5,504
+505,6,Legazpi,Pasay,2023-04-19,09:00:00,6,505
+506,7,Legazpi,Pasay,2023-04-20,10:00:00,7,506
+507,8,Legazpi,Pasay,2023-04-20,11:00:00,8,507
+508,9,Legazpi,Pasay,2023-04-21,12:00:00,9,508
+509,10,Legazpi,Pasay,2023-04-21,13:00:00,10,509
+510,4,Legazpi,Pasay,2023-04-22,14:00:00,10,510
