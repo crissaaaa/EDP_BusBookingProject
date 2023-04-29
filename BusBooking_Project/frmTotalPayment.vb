@@ -112,6 +112,10 @@ Public Class frmTotalPayment
         frmMain.Show()
     End Sub
 
+    Private Sub printbtn_Click(sender As Object, e As EventArgs) Handles printbtn.Click
+        Call ImportToExcel(Me.DataGridView5, "totalPaymentReport.xlsx")
+    End Sub
+
     'Private Sub uploadbtn_Click(sender As Object, e As EventArgs)
     ' Create an OpenFileDialog to allow the user to select a file
     '   Dim openFileDialog As New OpenFileDialog()

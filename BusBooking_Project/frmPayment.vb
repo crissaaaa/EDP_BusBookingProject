@@ -215,4 +215,7 @@ Public Class frmPayment
         frmMain.Show()
     End Sub
 
+    Private Sub printbtn_Click(sender As Object, e As EventArgs) Handles printbtn.Click
+        Call ImportToExcel(Me.DataGridView1, "paymentReport1.xlsx")
+    End Sub
 End Class

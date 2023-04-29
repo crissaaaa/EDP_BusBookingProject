@@ -218,4 +218,7 @@ Public Class frmCustomer
         frmMain.Show()
     End Sub
 
+    Private Sub printbtn_Click(sender As Object, e As EventArgs) Handles printbtn.Click
+        Call ImportToExcel(Me.DataGridView3, "customerReport.xlsx")
+    End Sub
 End Class

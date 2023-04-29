@@ -115,7 +115,6 @@ Public Class frmDriver
         End With
     End Sub
 
-
     'Return to Main Form
     Private Sub menubtn_Click(sender As Object, e As EventArgs) Handles menubtn.Click
         Me.Hide()
@@ -167,7 +166,6 @@ Public Class frmDriver
                           "LINES TERMINATED BY '\r\n' " &
                           "IGNORE 1 LINES"
 
-                ' Execute the command
                 cmd.ExecuteNonQuery()
 
                 ' Create a DataTable to hold the uploaded data
@@ -200,4 +198,7 @@ Public Class frmDriver
         End If
     End Sub
 
+    Private Sub printbtn_Click(sender As Object, e As EventArgs) Handles printbtn.Click
+        Call ImportToExcel(Me.DataGridView4, "driverReport1.xlsx")
+    End Sub
 End Class

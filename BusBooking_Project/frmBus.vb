@@ -203,4 +203,7 @@ Public Class frmBus
         End If
     End Sub
 
+    Private Sub printbtn_Click(sender As Object, e As EventArgs) Handles printbtn.Click
+        Call ImportToExcel(Me.DataGridView2, "busReport.xlsx")
+    End Sub
 End Class

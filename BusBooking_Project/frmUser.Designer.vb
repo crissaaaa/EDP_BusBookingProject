@@ -54,6 +54,7 @@ Partial Class frmUser
         Me.addbtn = New System.Windows.Forms.PictureBox()
         Me.printbtn = New System.Windows.Forms.PictureBox()
         Me.viewlistbtn = New System.Windows.Forms.PictureBox()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.menubtn, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -373,6 +374,10 @@ Partial Class frmUser
         Me.viewlistbtn.TabIndex = 45
         Me.viewlistbtn.TabStop = False
         '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
+        '
         'frmUser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -441,4 +446,5 @@ Partial Class frmUser
     Friend WithEvents printbtn As PictureBox
     Friend WithEvents viewlistbtn As PictureBox
     Friend WithEvents DataGridView8 As DataGridView
+    Friend WithEvents PrintDialog1 As PrintDialog
 End Class

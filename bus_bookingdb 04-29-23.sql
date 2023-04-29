@@ -74,7 +74,7 @@ CREATE TABLE `bus` (
   KEY `driver_id_idx` (`driverID`),
   CONSTRAINT `driver_id` FOREIGN KEY (`driverID`) REFERENCES `driver` (`driverID`) ON DELETE RESTRICT ON UPDATE CASCADE,
   CONSTRAINT `userID_idx2` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`) ON DELETE RESTRICT ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=266 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=501 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -83,7 +83,7 @@ CREATE TABLE `bus` (
 
 LOCK TABLES `bus` WRITE;
 /*!40000 ALTER TABLE `bus` DISABLE KEYS */;
-INSERT INTO `bus` VALUES (1,'AHG 154',1,100,1,1),(2,'EAV 289',2,100,2,2),(3,'ABV 451',1,100,3,3),(4,'AFC 101',2,100,4,4),(5,'EDT 642',2,100,5,5),(6,'EVS 433',2,100,6,6),(7,'FTH 555',2,100,7,7),(8,'THS 157',2,100,8,8),(9,'ABCD 4567',2,75,9,9),(10,'XYZ 143',1,100,10,10),(11,'AVS 567',1,90,1,11),(12,'XYZ 987',1,80,2,12),(180,'ABC 123',1,90,10,180),(265,'ABC 765',1,80,10,180);
+INSERT INTO `bus` VALUES (1,'AHG 154',1,100,1,1),(2,'EAV 289',2,100,2,2),(3,'ABV 451',1,100,3,3),(4,'AFC 101',2,100,4,4),(5,'EDT 642',2,100,5,5),(6,'EVS 433',2,100,6,6),(7,'FTH 555',2,100,7,7),(8,'THS 157',2,100,8,8),(9,'ABCD 4567',2,75,9,9),(10,'XYZ 143',1,100,10,10),(11,'AVS 567',1,90,1,11),(12,'XYZ 987',1,80,2,12),(180,'ABC 123',1,90,10,180),(265,'ABC 765',1,80,10,180),(300,'XYZ 1234',1,90,1,265);
 /*!40000 ALTER TABLE `bus` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -318,7 +318,7 @@ CREATE TABLE `user` (
   `password` longtext,
   `acc_status` varchar(10) DEFAULT NULL COMMENT '1= Active \\n0 = Not Active',
   PRIMARY KEY (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=506 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=507 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -327,7 +327,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'Juan Dela Cruz','09122333412','juandelacruz@gmail.com','Juan','550e1bafe077ff0b0b67f4e32f29d751','1'),(2,'Robert Reyes','09234155901','robertreyes@gmail.com','Robert','550e1bafe077ff0b0b67f4e32f29d751','1'),(3,'Hannah Ocampo','09611444250','hannahocampo@gmail.com','Hannah','550e1bafe077ff0b0b67f4e32f29d751','1'),(4,'Maria Natividad','09123498912','marianatividad@gmail.com','Maria','550e1bafe077ff0b0b67f4e32f29d751','1'),(5,'Naruto Uzamaki','09511333260','uzamakinaruto@email.com','naruto','64fa1fb463fa5a377557e9de9c48d200','1'),(6,'Hanson Smith','09918233215','hansonsmith@gmail.com','Hanson','550e1bafe077ff0b0b67f4e32f29d751','1'),(7,'Johny Jones','09511333249','johnyjones@gmail.com','Johny','550e1bafe077ff0b0b67f4e32f29d751','1'),(8,'Cristy Fermin','09104456713','cristyfermin@gmail.com','Cristy','550e1bafe077ff0b0b67f4e32f29d751','1'),(9,'Francis Manalo','09481234567','francismanalo@gmail.com','Francis','550e1bafe077ff0b0b67f4e32f29d751','1'),(10,'Jansen Aquino','09918484518','jansenaquino@gmail.com','Jansen','550e1bafe077ff0b0b67f4e32f29d751','1'),(11,'Crissa Olavario','09511222406','crissa@gmail.com','crissa','c91ae4d742d24311780f6894b6fd2669','1'),(180,'CRISSA OLAVARIO','09123456789','crissa@gmail.com','crissa','123456789','1'),(265,'Madison ','09123147792','madison@gmail.com','mad','madison','1'),(500,'Crissa Olavario','9123456789','crissa@gmail.com','crissa','12345','1'),(501,'Mitzi Oringo','9123456789','mitzi@gmail.com','mitzi','12345','1'),(502,'Faye Buban','9123456789','faye@gmail.com','faye','12345','1'),(503,'Monica Ferrel','9123456789','monica@gmail.com','monica','12345','1'),(504,'Ash Ramos','9123456789','ash@gmail.com','ash','12345','1'),(505,'Cecille Cervantes ','9123456789','cecille@gmail.com','ces','12345','1');
+INSERT INTO `user` VALUES (1,'Juan Dela Cruz','09122333412','juandelacruz@gmail.com','Juan','550e1bafe077ff0b0b67f4e32f29d751','1'),(2,'Robert Reyes','09234155901','robertreyes@gmail.com','Robert','550e1bafe077ff0b0b67f4e32f29d751','1'),(3,'Hannah Ocampo','09611444250','hannahocampo@gmail.com','Hannah','550e1bafe077ff0b0b67f4e32f29d751','1'),(4,'Maria Natividad','09123498912','marianatividad@gmail.com','Maria','550e1bafe077ff0b0b67f4e32f29d751','1'),(5,'Naruto Uzamaki','09511333260','uzamakinaruto@email.com','naruto','64fa1fb463fa5a377557e9de9c48d200','1'),(6,'Hanson Smith','09918233215','hansonsmith@gmail.com','Hanson','550e1bafe077ff0b0b67f4e32f29d751','1'),(7,'Johny Jones','09511333249','johnyjones@gmail.com','Johny','550e1bafe077ff0b0b67f4e32f29d751','1'),(8,'Cristy Fermin','09104456713','cristyfermin@gmail.com','Cristy','550e1bafe077ff0b0b67f4e32f29d751','1'),(9,'Francis Manalo','09481234567','francismanalo@gmail.com','Francis','550e1bafe077ff0b0b67f4e32f29d751','1'),(10,'Jansen Aquino','09918484518','jansenaquino@gmail.com','Jansen','550e1bafe077ff0b0b67f4e32f29d751','1'),(11,'Crissa Olavario','09511222406','crissa@gmail.com','crissa','c91ae4d742d24311780f6894b6fd2669','1'),(180,'CRISSA OLAVARIO','09123456789','crissa@gmail.com','crissa','123456789','1'),(265,'Madison ','09123147792','madison@gmail.com','mad','b25fe981a8e4d2b00e2c02dc2381b37cddbcf451ba9f21055d6ab039','1'),(500,'Crissa Olavario','9123456789','crissa@gmail.com','crissa','12345','1'),(501,'Mitzi Oringo','9123456789','mitzi@gmail.com','mitzi','12345','1'),(502,'Faye Buban','9123456789','faye@gmail.com','faye','12345','1'),(503,'Monica Ferrel','9123456789','monica@gmail.com','monica','12345','1'),(504,'Ash Ramos','9123456789','ash@gmail.com','ash','12345','1'),(505,'Cecille Cervantes ','9123456789','cecille@gmail.com','ces','12345','1'),(506,'Juan Dela Cruz','09122333412','juandelacruz@gmail.com','Juan','e3cc7e0f15ac25faa632776607030a68c9775090ff8e6243004c449c','1');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -468,4 +468,4 @@ SET character_set_client = @saved_cs_client;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-04-17 21:00:50
+-- Dump completed on 2023-04-29 15:18:30

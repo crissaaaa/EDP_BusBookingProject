@@ -47,6 +47,7 @@ Partial Class frmBooking
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.menubtn = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.uploadbtn = New System.Windows.Forms.PictureBox()
@@ -55,17 +56,16 @@ Partial Class frmBooking
         Me.addbtn = New System.Windows.Forms.PictureBox()
         Me.printbtn = New System.Windows.Forms.PictureBox()
         Me.viewlistbtn = New System.Windows.Forms.PictureBox()
-        Me.menubtn = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
+        CType(Me.menubtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.uploadbtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.deletebtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.editbtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.addbtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.printbtn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.viewlistbtn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.menubtn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -298,6 +298,16 @@ Partial Class frmBooking
         Me.Panel1.Size = New System.Drawing.Size(1359, 66)
         Me.Panel1.TabIndex = 35
         '
+        'menubtn
+        '
+        Me.menubtn.Image = CType(resources.GetObject("menubtn.Image"), System.Drawing.Image)
+        Me.menubtn.Location = New System.Drawing.Point(40, 17)
+        Me.menubtn.Name = "menubtn"
+        Me.menubtn.Size = New System.Drawing.Size(42, 33)
+        Me.menubtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.menubtn.TabIndex = 29
+        Me.menubtn.TabStop = False
+        '
         'Label10
         '
         Me.Label10.AutoSize = True
@@ -378,16 +388,6 @@ Partial Class frmBooking
         Me.viewlistbtn.TabIndex = 30
         Me.viewlistbtn.TabStop = False
         '
-        'menubtn
-        '
-        Me.menubtn.Image = CType(resources.GetObject("menubtn.Image"), System.Drawing.Image)
-        Me.menubtn.Location = New System.Drawing.Point(40, 17)
-        Me.menubtn.Name = "menubtn"
-        Me.menubtn.Size = New System.Drawing.Size(42, 33)
-        Me.menubtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.menubtn.TabIndex = 29
-        Me.menubtn.TabStop = False
-        '
         'frmBooking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -414,13 +414,13 @@ Partial Class frmBooking
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        CType(Me.menubtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.uploadbtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.deletebtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.editbtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.addbtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.printbtn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.viewlistbtn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.menubtn, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

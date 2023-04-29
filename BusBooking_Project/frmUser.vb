@@ -1,9 +1,10 @@
 ﻿Imports System.Net
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
 Imports MySql.Data.MySqlClient
+Imports System.Data.Common
+Imports Excel = Microsoft.Office.Interop.Excel
 
 Public Class frmUser
-
     Private Sub searchacc_Click(sender As Object, e As EventArgs) Handles searchacc.Click
         With Me
             Call ConnectToDB()
@@ -72,8 +73,8 @@ Public Class frmUser
                 strsql = "UPDATE user SET name='" & nametext.Text & "',contact='" _
                         & contact.Text & "', email = '" _
                         & email.Text & "', username = '" _
-                        & username.Text & "', password = md5('" _
-                        & password.Text & "'), acc_status = '" _
+                        & username.Text & "', password = sha2('" _
+                        & password.Text & "', 224), acc_status = '" _
                         & accstatus.Text & "'
                         WHERE userID='" & userid1.Text & "'"
                 mycmd.CommandText = strsql
@@ -156,6 +157,7 @@ Public Class frmUser
             SDA.Update(dbdata)
 
             myconn.Close()
+
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
@@ -221,4 +223,9 @@ Public Class frmUser
         Me.Hide()
         frmMain.Show()
     End Sub
+
+    Private Sub printbtn_Click(sender As Object, e As EventArgs) Handles printbtn.Click
+        Call ImportToExcel(Me.DataGridView8, "userReport1.xlsx")
+    End Sub
+
 End Class

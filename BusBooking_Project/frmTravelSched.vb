@@ -1,4 +1,8 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Net
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement.Button
+Imports MySql.Data.MySqlClient
+Imports System.Data.Common
+Imports Excel = Microsoft.Office.Interop.Excel
 
 
 Public Class frmTravelSched
@@ -212,4 +216,7 @@ Public Class frmTravelSched
         frmMain.Show()
     End Sub
 
+    Private Sub printbtn_Click(sender As Object, e As EventArgs) Handles printbtn.Click
+        Call ImportToExcel(Me.DataGridView7, "travel_schedReport.xlsx")
+    End Sub
 End Class
